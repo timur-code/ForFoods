@@ -1,0 +1,197 @@
+/*
+    --Normal Text
+    font-family: 'Catamaran', sans-serif; 
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    --Navbars
+    font-family: 'Courgette', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
+*/
+
+/** General section */
+html, body
+{
+    margin: 0;
+}
+
+.landing
+{
+    min-height: 1000px;
+    display: grid;
+    grid-template-rows: 400px 1350px 400px 400px;
+}
+
+@media only screen and (max-width: 900px) 
+{
+    .landing
+    {
+        grid-template-rows: 400px 1350px 975px 400px;
+    }
+}
+
+/** Header section */
+.landing-header
+{
+    position: relative;
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-header .overlay
+{
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+}
+
+.landing-header .header-text
+{
+    text-align: center;
+    width: 50%;
+}
+
+/** About section */
+.landing-about
+{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.about-section
+{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.about-section-reverse
+{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.about-section > .about-text,
+.about-section-reverse > .about-text
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 28px;
+}
+
+.about-section > .about-image,
+.about-section-reverse > .about-image
+{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 900px) 
+{
+    .about-section > .about-text,
+    .about-section-reverse > .about-text
+    {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 24px;
+    }
+}
+
+
+/** Reviews section */
+.landing-reviews
+{
+    background-color:rgb(245, 255, 245);
+    font-family: 'Catamaran', sans-serif; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.customer-card
+{
+    height: 275px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-card img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 900px) 
+{
+    .reviews-container
+    {
+        flex-direction: column;
+    }
+}
+
+.landing-footer
+{
+    background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-footer a
+{
+    font-family: 'Catamaran', sans-serif;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.landing-footer a:hover
+{
+    cursor: pointer;
+}
+
+.landing-footer a::after
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    transition: width .3s;
+}
+
+.landing-footer a:hover::after {
+    width: 100%;
+}

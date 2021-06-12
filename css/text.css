@@ -1,0 +1,49 @@
+/*
+    --Normal Text
+    font-family: 'Catamaran', sans-serif; 
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    --Navbars
+    font-family: 'Courgette', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
+*/
+
+.center-text
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.brand-text
+{
+    font-family: 'Courgette', cursive;
+}
+
+.big-text
+{
+    font-size: 40px;
+}
+
+.average-text
+{
+    font-size: 32px;
+}
+
+.normal-text
+{
+    font-size: 24px;
+    font-family: 'Catamaran', sans-serif; 
+}
+
+.no-select
+{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                    supported by Chrome, Edge, Opera and Firefox */
+}

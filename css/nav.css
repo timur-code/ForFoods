@@ -1,0 +1,44 @@
+/*
+    --Normal Text
+    font-family: 'Catamaran', sans-serif; 
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    --Navbars
+    font-family: 'Courgette', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lobster', cursive;
+*/
+nav {
+    min-height: 80px;
+}
+
+.navbar .dropdown-item
+{
+    font-size: 24px;
+    font-family: 'Catamaran', sans-serif; 
+}
+
+.navbar-brand
+{
+    font-size: 36px;
+    font-family: 'Courgette', cursive;
+}
+
+.nav-link
+{
+    font-size: 28px;
+    font-family: 'Catamaran', sans-serif; 
+}
+
+#userProfile
+{
+    opacity: 0.7;
+    padding-left: 0;
+    font-size: 28px;
+    transition: opacity 0.3s;
+}
+
+#userProfile:hover
+{
+    opacity: 0.85;
+}
